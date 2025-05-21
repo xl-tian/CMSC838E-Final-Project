@@ -1,0 +1,797 @@
+# Code 1, Full Tree, Output of Cheney's GC #######################################
+
+rsp: 0x7ffcd011f2e8
+rbp: 0x7ffcd011f360
+rbx: 0x7f954bd74108
+to space: 0x7f954bd87890 140279199332496
+from space: 0x7f954bd74010 140279199252496
+
+Stack:
+rsp: 0x7ffcd011f2e8	Val: 7f954bd740f2	Type: 7	Pointer: 0x7f954bd740f0
+rsp: 0x7ffcd011f2f0	Val: 7f954bd740e2	Type: 7	Pointer: 0x7f954bd740e0
+rsp: 0x7ffcd011f2f8	Val: 7f954bd740d2	Type: 7	Pointer: 0x7f954bd740d0
+rsp: 0x7ffcd011f300	Val: 7f954bd740c2	Type: 7	Pointer: 0x7f954bd740c0
+rsp: 0x7ffcd011f308	Val: 7f954bd740b2	Type: 7	Pointer: 0x7f954bd740b0
+rsp: 0x7ffcd011f310	Val: 7f954bd740a2	Type: 7	Pointer: 0x7f954bd740a0
+rsp: 0x7ffcd011f318	Val: 7f954bd74092	Type: 7	Pointer: 0x7f954bd74090
+rsp: 0x7ffcd011f320	Val: 7f954bd74082	Type: 7	Pointer: 0x7f954bd74080
+rsp: 0x7ffcd011f328	Val: 7f954bd74072	Type: 7	Pointer: 0x7f954bd74070
+rsp: 0x7ffcd011f330	Val: 7f954bd74062	Type: 7	Pointer: 0x7f954bd74060
+rsp: 0x7ffcd011f338	Val: 7f954bd74052	Type: 7	Pointer: 0x7f954bd74050
+rsp: 0x7ffcd011f340	Val: 7f954bd74042	Type: 7	Pointer: 0x7f954bd74040
+rsp: 0x7ffcd011f348	Val: 7f954bd74032	Type: 7	Pointer: 0x7f954bd74030
+rsp: 0x7ffcd011f350	Val: 7f954bd74022	Type: 7	Pointer: 0x7f954bd74020
+rsp: 0x7ffcd011f358	Val: 7f954bd74012	Type: 7	Pointer: 0x7f954bd74010
+From Space:
+heap: 0x7f954bd74010	Val: 70	Type: 0
+heap: 0x7f954bd74018	Val: 60	Type: 0
+heap: 0x7f954bd74020	Val: f0	Type: 0
+heap: 0x7f954bd74028	Val: e0	Type: 0
+heap: 0x7f954bd74030	Val: a0	Type: 0
+heap: 0x7f954bd74038	Val: 90	Type: 0
+heap: 0x7f954bd74040	Val: 40	Type: 0
+heap: 0x7f954bd74048	Val: 30	Type: 0
+heap: 0x7f954bd74050	Val: 20	Type: 0
+heap: 0x7f954bd74058	Val: 10	Type: 0
+heap: 0x7f954bd74060	Val: 170	Type: 0
+heap: 0x7f954bd74068	Val: 130	Type: 0
+heap: 0x7f954bd74070	Val: b0	Type: 0
+heap: 0x7f954bd74078	Val: 220	Type: 0
+heap: 0x7f954bd74080	Val: 80	Type: 0
+heap: 0x7f954bd74088	Val: 20	Type: 0
+heap: 0x7f954bd74090	Val: 7f954bd74022	Type: 7	Pointer: 0x7f954bd74020
+heap: 0x7f954bd74098	Val: 7f954bd74012	Type: 7	Pointer: 0x7f954bd74010
+heap: 0x7f954bd740a0	Val: 7f954bd74042	Type: 7	Pointer: 0x7f954bd74040
+heap: 0x7f954bd740a8	Val: 7f954bd74032	Type: 7	Pointer: 0x7f954bd74030
+heap: 0x7f954bd740b0	Val: 7f954bd74062	Type: 7	Pointer: 0x7f954bd74060
+heap: 0x7f954bd740b8	Val: 7f954bd74052	Type: 7	Pointer: 0x7f954bd74050
+heap: 0x7f954bd740c0	Val: 7f954bd74082	Type: 7	Pointer: 0x7f954bd74080
+heap: 0x7f954bd740c8	Val: 7f954bd74072	Type: 7	Pointer: 0x7f954bd74070
+heap: 0x7f954bd740d0	Val: 7f954bd74092	Type: 7	Pointer: 0x7f954bd74090
+heap: 0x7f954bd740d8	Val: 7f954bd740a2	Type: 7	Pointer: 0x7f954bd740a0
+heap: 0x7f954bd740e0	Val: 7f954bd740c2	Type: 7	Pointer: 0x7f954bd740c0
+heap: 0x7f954bd740e8	Val: 7f954bd740b2	Type: 7	Pointer: 0x7f954bd740b0
+heap: 0x7f954bd740f0	Val: 7f954bd740e2	Type: 7	Pointer: 0x7f954bd740e0
+heap: 0x7f954bd740f8	Val: 7f954bd740d2	Type: 7	Pointer: 0x7f954bd740d0
+heap: 0x7f954bd74100	Val: 80	Type: 0
+
+After Garbage Collection
+Stack:
+stack: 0x7ffcd011f2e8	Val: 7f954bd87892	Type: 7	Pointer: 0x7f954bd87890
+stack: 0x7ffcd011f2f0	Val: 7f954bd878a2	Type: 7	Pointer: 0x7f954bd878a0
+stack: 0x7ffcd011f2f8	Val: 7f954bd878b2	Type: 7	Pointer: 0x7f954bd878b0
+stack: 0x7ffcd011f300	Val: 7f954bd878c2	Type: 7	Pointer: 0x7f954bd878c0
+stack: 0x7ffcd011f308	Val: 7f954bd878d2	Type: 7	Pointer: 0x7f954bd878d0
+stack: 0x7ffcd011f310	Val: 7f954bd878e2	Type: 7	Pointer: 0x7f954bd878e0
+stack: 0x7ffcd011f318	Val: 7f954bd878f2	Type: 7	Pointer: 0x7f954bd878f0
+stack: 0x7ffcd011f320	Val: 7f954bd87902	Type: 7	Pointer: 0x7f954bd87900
+stack: 0x7ffcd011f328	Val: 7f954bd87912	Type: 7	Pointer: 0x7f954bd87910
+stack: 0x7ffcd011f330	Val: 7f954bd87922	Type: 7	Pointer: 0x7f954bd87920
+stack: 0x7ffcd011f338	Val: 7f954bd87932	Type: 7	Pointer: 0x7f954bd87930
+stack: 0x7ffcd011f340	Val: 7f954bd87942	Type: 7	Pointer: 0x7f954bd87940
+stack: 0x7ffcd011f348	Val: 7f954bd87952	Type: 7	Pointer: 0x7f954bd87950
+stack: 0x7ffcd011f350	Val: 7f954bd87962	Type: 7	Pointer: 0x7f954bd87960
+stack: 0x7ffcd011f358	Val: 7f954bd87972	Type: 7	Pointer: 0x7f954bd87970
+To Space:
+heap: 0x7f954bd87890	Val: 7f954bd878a2	Type: 7	Pointer: 0x7f954bd878a0
+heap: 0x7f954bd87898	Val: 7f954bd878b2	Type: 7	Pointer: 0x7f954bd878b0
+heap: 0x7f954bd878a0	Val: 7f954bd878c2	Type: 7	Pointer: 0x7f954bd878c0
+heap: 0x7f954bd878a8	Val: 7f954bd878d2	Type: 7	Pointer: 0x7f954bd878d0
+heap: 0x7f954bd878b0	Val: 7f954bd878f2	Type: 7	Pointer: 0x7f954bd878f0
+heap: 0x7f954bd878b8	Val: 7f954bd878e2	Type: 7	Pointer: 0x7f954bd878e0
+heap: 0x7f954bd878c0	Val: 7f954bd87902	Type: 7	Pointer: 0x7f954bd87900
+heap: 0x7f954bd878c8	Val: 7f954bd87912	Type: 7	Pointer: 0x7f954bd87910
+heap: 0x7f954bd878d0	Val: 7f954bd87922	Type: 7	Pointer: 0x7f954bd87920
+heap: 0x7f954bd878d8	Val: 7f954bd87932	Type: 7	Pointer: 0x7f954bd87930
+heap: 0x7f954bd878e0	Val: 7f954bd87942	Type: 7	Pointer: 0x7f954bd87940
+heap: 0x7f954bd878e8	Val: 7f954bd87952	Type: 7	Pointer: 0x7f954bd87950
+heap: 0x7f954bd878f0	Val: 7f954bd87962	Type: 7	Pointer: 0x7f954bd87960
+heap: 0x7f954bd878f8	Val: 7f954bd87972	Type: 7	Pointer: 0x7f954bd87970
+heap: 0x7f954bd87900	Val: 80	Type: 0
+heap: 0x7f954bd87908	Val: 20	Type: 0
+heap: 0x7f954bd87910	Val: b0	Type: 0
+heap: 0x7f954bd87918	Val: 220	Type: 0
+heap: 0x7f954bd87920	Val: 170	Type: 0
+heap: 0x7f954bd87928	Val: 130	Type: 0
+heap: 0x7f954bd87930	Val: 20	Type: 0
+heap: 0x7f954bd87938	Val: 10	Type: 0
+heap: 0x7f954bd87940	Val: 40	Type: 0
+heap: 0x7f954bd87948	Val: 30	Type: 0
+heap: 0x7f954bd87950	Val: a0	Type: 0
+heap: 0x7f954bd87958	Val: 90	Type: 0
+heap: 0x7f954bd87960	Val: f0	Type: 0
+heap: 0x7f954bd87968	Val: e0	Type: 0
+heap: 0x7f954bd87970	Val: 70	Type: 0
+heap: 0x7f954bd87978	Val: 60	Type: 0
+
+# Code 1, Full Tree, Output of DFS GC #######################################
+
+rsp: 0x7ffcf0116fd8
+rbp: 0x7ffcf0117050
+rbx: 0x7fd848616108
+to space: 0x7fd848629890 140566904084624
+from space: 0x7fd848616010 140566904004624
+
+Stack:
+rsp: 0x7ffcf0116fd8	Val: 7fd8486160f2	Type: 7	Pointer: 0x7fd8486160f0
+rsp: 0x7ffcf0116fe0	Val: 7fd8486160e2	Type: 7	Pointer: 0x7fd8486160e0
+rsp: 0x7ffcf0116fe8	Val: 7fd8486160d2	Type: 7	Pointer: 0x7fd8486160d0
+rsp: 0x7ffcf0116ff0	Val: 7fd8486160c2	Type: 7	Pointer: 0x7fd8486160c0
+rsp: 0x7ffcf0116ff8	Val: 7fd8486160b2	Type: 7	Pointer: 0x7fd8486160b0
+rsp: 0x7ffcf0117000	Val: 7fd8486160a2	Type: 7	Pointer: 0x7fd8486160a0
+rsp: 0x7ffcf0117008	Val: 7fd848616092	Type: 7	Pointer: 0x7fd848616090
+rsp: 0x7ffcf0117010	Val: 7fd848616082	Type: 7	Pointer: 0x7fd848616080
+rsp: 0x7ffcf0117018	Val: 7fd848616072	Type: 7	Pointer: 0x7fd848616070
+rsp: 0x7ffcf0117020	Val: 7fd848616062	Type: 7	Pointer: 0x7fd848616060
+rsp: 0x7ffcf0117028	Val: 7fd848616052	Type: 7	Pointer: 0x7fd848616050
+rsp: 0x7ffcf0117030	Val: 7fd848616042	Type: 7	Pointer: 0x7fd848616040
+rsp: 0x7ffcf0117038	Val: 7fd848616032	Type: 7	Pointer: 0x7fd848616030
+rsp: 0x7ffcf0117040	Val: 7fd848616022	Type: 7	Pointer: 0x7fd848616020
+rsp: 0x7ffcf0117048	Val: 7fd848616012	Type: 7	Pointer: 0x7fd848616010
+From Space:
+heap: 0x7fd848616010	Val: 70	Type: 0
+heap: 0x7fd848616018	Val: 60	Type: 0
+heap: 0x7fd848616020	Val: f0	Type: 0
+heap: 0x7fd848616028	Val: e0	Type: 0
+heap: 0x7fd848616030	Val: a0	Type: 0
+heap: 0x7fd848616038	Val: 90	Type: 0
+heap: 0x7fd848616040	Val: 40	Type: 0
+heap: 0x7fd848616048	Val: 30	Type: 0
+heap: 0x7fd848616050	Val: 20	Type: 0
+heap: 0x7fd848616058	Val: 10	Type: 0
+heap: 0x7fd848616060	Val: 170	Type: 0
+heap: 0x7fd848616068	Val: 130	Type: 0
+heap: 0x7fd848616070	Val: b0	Type: 0
+heap: 0x7fd848616078	Val: 220	Type: 0
+heap: 0x7fd848616080	Val: 80	Type: 0
+heap: 0x7fd848616088	Val: 20	Type: 0
+heap: 0x7fd848616090	Val: 7fd848616022	Type: 7	Pointer: 0x7fd848616020
+heap: 0x7fd848616098	Val: 7fd848616012	Type: 7	Pointer: 0x7fd848616010
+heap: 0x7fd8486160a0	Val: 7fd848616042	Type: 7	Pointer: 0x7fd848616040
+heap: 0x7fd8486160a8	Val: 7fd848616032	Type: 7	Pointer: 0x7fd848616030
+heap: 0x7fd8486160b0	Val: 7fd848616062	Type: 7	Pointer: 0x7fd848616060
+heap: 0x7fd8486160b8	Val: 7fd848616052	Type: 7	Pointer: 0x7fd848616050
+heap: 0x7fd8486160c0	Val: 7fd848616082	Type: 7	Pointer: 0x7fd848616080
+heap: 0x7fd8486160c8	Val: 7fd848616072	Type: 7	Pointer: 0x7fd848616070
+heap: 0x7fd8486160d0	Val: 7fd848616092	Type: 7	Pointer: 0x7fd848616090
+heap: 0x7fd8486160d8	Val: 7fd8486160a2	Type: 7	Pointer: 0x7fd8486160a0
+heap: 0x7fd8486160e0	Val: 7fd8486160c2	Type: 7	Pointer: 0x7fd8486160c0
+heap: 0x7fd8486160e8	Val: 7fd8486160b2	Type: 7	Pointer: 0x7fd8486160b0
+heap: 0x7fd8486160f0	Val: 7fd8486160e2	Type: 7	Pointer: 0x7fd8486160e0
+heap: 0x7fd8486160f8	Val: 7fd8486160d2	Type: 7	Pointer: 0x7fd8486160d0
+heap: 0x7fd848616100	Val: 80	Type: 0
+
+
+After First Phase 
+Stack:
+stack: 0x7ffcf0116fd8	Val: 7fd848629892	Type: 7	Pointer: 0x7fd848629890
+stack: 0x7ffcf0116fe0	Val: 7fd8486298a2	Type: 7	Pointer: 0x7fd8486298a0
+stack: 0x7ffcf0116fe8	Val: 7fd848629912	Type: 7	Pointer: 0x7fd848629910
+stack: 0x7ffcf0116ff0	Val: 7fd8486298b2	Type: 7	Pointer: 0x7fd8486298b0
+stack: 0x7ffcf0116ff8	Val: 7fd8486298e2	Type: 7	Pointer: 0x7fd8486298e0
+stack: 0x7ffcf0117000	Val: 7fd848629952	Type: 7	Pointer: 0x7fd848629950
+stack: 0x7ffcf0117008	Val: 7fd848629922	Type: 7	Pointer: 0x7fd848629920
+stack: 0x7ffcf0117010	Val: 7fd8486298c2	Type: 7	Pointer: 0x7fd8486298c0
+stack: 0x7ffcf0117018	Val: 7fd8486298d2	Type: 7	Pointer: 0x7fd8486298d0
+stack: 0x7ffcf0117020	Val: 7fd8486298f2	Type: 7	Pointer: 0x7fd8486298f0
+stack: 0x7ffcf0117028	Val: 7fd848629902	Type: 7	Pointer: 0x7fd848629900
+stack: 0x7ffcf0117030	Val: 7fd848629962	Type: 7	Pointer: 0x7fd848629960
+stack: 0x7ffcf0117038	Val: 7fd848629972	Type: 7	Pointer: 0x7fd848629970
+stack: 0x7ffcf0117040	Val: 7fd848629932	Type: 7	Pointer: 0x7fd848629930
+stack: 0x7ffcf0117048	Val: 7fd848629942	Type: 7	Pointer: 0x7fd848629940
+To Space:
+heap: 0x7fd848629890	Val: 7fd8486298a2	Type: 7	Pointer: 0x7fd8486298a0
+heap: 0x7fd848629898	Val: 7fd848629912	Type: 7	Pointer: 0x7fd848629910
+heap: 0x7fd8486298a0	Val: 7fd8486298b2	Type: 7	Pointer: 0x7fd8486298b0
+heap: 0x7fd8486298a8	Val: 7fd8486298e2	Type: 7	Pointer: 0x7fd8486298e0
+heap: 0x7fd8486298b0	Val: 7fd8486298c2	Type: 7	Pointer: 0x7fd8486298c0
+heap: 0x7fd8486298b8	Val: 7fd8486298d2	Type: 7	Pointer: 0x7fd8486298d0
+heap: 0x7fd8486298c0	Val: 80	Type: 0
+heap: 0x7fd8486298c8	Val: 20	Type: 0
+heap: 0x7fd8486298d0	Val: b0	Type: 0
+heap: 0x7fd8486298d8	Val: 220	Type: 0
+heap: 0x7fd8486298e0	Val: 7fd8486298f2	Type: 7	Pointer: 0x7fd8486298f0
+heap: 0x7fd8486298e8	Val: 7fd848629902	Type: 7	Pointer: 0x7fd848629900
+heap: 0x7fd8486298f0	Val: 170	Type: 0
+heap: 0x7fd8486298f8	Val: 130	Type: 0
+heap: 0x7fd848629900	Val: 20	Type: 0
+heap: 0x7fd848629908	Val: 10	Type: 0
+heap: 0x7fd848629910	Val: 7fd848629922	Type: 7	Pointer: 0x7fd848629920
+heap: 0x7fd848629918	Val: 7fd848629952	Type: 7	Pointer: 0x7fd848629950
+heap: 0x7fd848629920	Val: 7fd848629932	Type: 7	Pointer: 0x7fd848629930
+heap: 0x7fd848629928	Val: 7fd848629942	Type: 7	Pointer: 0x7fd848629940
+heap: 0x7fd848629930	Val: f0	Type: 0
+heap: 0x7fd848629938	Val: e0	Type: 0
+heap: 0x7fd848629940	Val: 70	Type: 0
+heap: 0x7fd848629948	Val: 60	Type: 0
+heap: 0x7fd848629950	Val: 7fd848629962	Type: 7	Pointer: 0x7fd848629960
+heap: 0x7fd848629958	Val: 7fd848629972	Type: 7	Pointer: 0x7fd848629970
+heap: 0x7fd848629960	Val: 40	Type: 0
+heap: 0x7fd848629968	Val: 30	Type: 0
+heap: 0x7fd848629970	Val: a0	Type: 0
+heap: 0x7fd848629978	Val: 90	Type: 0
+
+
+# Code 2, Gap between tree and inserted node, Output of Cheney's GC #######################################
+
+
+Stack:
+rsp: 0x7ffe83eca368	Val: 7fe2cf7981ba	Type: 7	Pointer: 0x7fe2cf7981b8
+rsp: 0x7ffe83eca370	Val: 7fe2cf7981aa	Type: 7	Pointer: 0x7fe2cf7981a8
+rsp: 0x7ffe83eca378	Val: 7fe2cf79819a	Type: 7	Pointer: 0x7fe2cf798198
+rsp: 0x7ffe83eca380	Val: 7fe2cf79818a	Type: 7	Pointer: 0x7fe2cf798188
+rsp: 0x7ffe83eca388	Val: 7fe2cf79817a	Type: 7	Pointer: 0x7fe2cf798178
+rsp: 0x7ffe83eca390	Val: 7fe2cf79816a	Type: 7	Pointer: 0x7fe2cf798168
+rsp: 0x7ffe83eca398	Val: 7fe2cf79815a	Type: 7	Pointer: 0x7fe2cf798158
+rsp: 0x7ffe83eca3a0	Val: 7fe2cf798143	Type: 8	Pointer: 0x7fe2cf798140
+rsp: 0x7ffe83eca3a8	Val: 7fe2cf798132	Type: 7	Pointer: 0x7fe2cf798130
+rsp: 0x7ffe83eca3b0	Val: 7fe2cf798122	Type: 7	Pointer: 0x7fe2cf798120
+rsp: 0x7ffe83eca3b8	Val: 7fe2cf798112	Type: 7	Pointer: 0x7fe2cf798110
+rsp: 0x7ffe83eca3c0	Val: 7fe2cf798102	Type: 7	Pointer: 0x7fe2cf798100
+rsp: 0x7ffe83eca3c8	Val: 7fe2cf7980f2	Type: 7	Pointer: 0x7fe2cf7980f0
+rsp: 0x7ffe83eca3d0	Val: 7fe2cf7980e2	Type: 7	Pointer: 0x7fe2cf7980e0
+rsp: 0x7ffe83eca3d8	Val: 7fe2cf7980d2	Type: 7	Pointer: 0x7fe2cf7980d0
+rsp: 0x7ffe83eca3e0	Val: 7fe2cf79802b	Type: 8	Pointer: 0x7fe2cf798028
+rsp: 0x7ffe83eca3e8	Val: 7fe2cf798013	Type: 8	Pointer: 0x7fe2cf798010
+From Space:
+heap: 0x7fe2cf798010	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fe2cf798018	Val: 90	Type: 0
+heap: 0x7fe2cf798020	Val: 90	Type: 0
+heap: 0x7fe2cf798028	Val: 14	Type: 9	Pointer: 0x10
+heap: 0x7fe2cf798030	Val: 40	Type: 0
+heap: 0x7fe2cf798038	Val: 40	Type: 0
+heap: 0x7fe2cf798040	Val: 40	Type: 0
+heap: 0x7fe2cf798048	Val: 40	Type: 0
+heap: 0x7fe2cf798050	Val: 40	Type: 0
+heap: 0x7fe2cf798058	Val: 40	Type: 0
+heap: 0x7fe2cf798060	Val: 40	Type: 0
+heap: 0x7fe2cf798068	Val: 40	Type: 0
+heap: 0x7fe2cf798070	Val: 40	Type: 0
+heap: 0x7fe2cf798078	Val: 40	Type: 0
+heap: 0x7fe2cf798080	Val: 40	Type: 0
+heap: 0x7fe2cf798088	Val: 40	Type: 0
+heap: 0x7fe2cf798090	Val: 40	Type: 0
+heap: 0x7fe2cf798098	Val: 40	Type: 0
+heap: 0x7fe2cf7980a0	Val: 40	Type: 0
+heap: 0x7fe2cf7980a8	Val: 40	Type: 0
+heap: 0x7fe2cf7980b0	Val: 40	Type: 0
+heap: 0x7fe2cf7980b8	Val: 40	Type: 0
+heap: 0x7fe2cf7980c0	Val: 40	Type: 0
+heap: 0x7fe2cf7980c8	Val: 40	Type: 0
+heap: 0x7fe2cf7980d0	Val: 70	Type: 0
+heap: 0x7fe2cf7980d8	Val: 60	Type: 0
+heap: 0x7fe2cf7980e0	Val: f0	Type: 0
+heap: 0x7fe2cf7980e8	Val: e0	Type: 0
+heap: 0x7fe2cf7980f0	Val: a0	Type: 0
+heap: 0x7fe2cf7980f8	Val: 90	Type: 0
+heap: 0x7fe2cf798100	Val: 40	Type: 0
+heap: 0x7fe2cf798108	Val: 30	Type: 0
+heap: 0x7fe2cf798110	Val: 20	Type: 0
+heap: 0x7fe2cf798118	Val: 10	Type: 0
+heap: 0x7fe2cf798120	Val: 170	Type: 0
+heap: 0x7fe2cf798128	Val: 130	Type: 0
+heap: 0x7fe2cf798130	Val: b0	Type: 0
+heap: 0x7fe2cf798138	Val: 220	Type: 0
+heap: 0x7fe2cf798140	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fe2cf798148	Val: 80	Type: 0
+heap: 0x7fe2cf798150	Val: 7fe2cf798013	Type: 8	Pointer: 0x7fe2cf798010
+heap: 0x7fe2cf798158	Val: 7fe2cf7980e2	Type: 7	Pointer: 0x7fe2cf7980e0
+heap: 0x7fe2cf798160	Val: 7fe2cf7980d2	Type: 7	Pointer: 0x7fe2cf7980d0
+heap: 0x7fe2cf798168	Val: 7fe2cf798102	Type: 7	Pointer: 0x7fe2cf798100
+heap: 0x7fe2cf798170	Val: 7fe2cf7980f2	Type: 7	Pointer: 0x7fe2cf7980f0
+heap: 0x7fe2cf798178	Val: 7fe2cf798122	Type: 7	Pointer: 0x7fe2cf798120
+heap: 0x7fe2cf798180	Val: 7fe2cf798112	Type: 7	Pointer: 0x7fe2cf798110
+heap: 0x7fe2cf798188	Val: 7fe2cf798143	Type: 8	Pointer: 0x7fe2cf798140
+heap: 0x7fe2cf798190	Val: 7fe2cf798132	Type: 7	Pointer: 0x7fe2cf798130
+heap: 0x7fe2cf798198	Val: 7fe2cf79815a	Type: 7	Pointer: 0x7fe2cf798158
+heap: 0x7fe2cf7981a0	Val: 7fe2cf79816a	Type: 7	Pointer: 0x7fe2cf798168
+heap: 0x7fe2cf7981a8	Val: 7fe2cf79818a	Type: 7	Pointer: 0x7fe2cf798188
+heap: 0x7fe2cf7981b0	Val: 7fe2cf79817a	Type: 7	Pointer: 0x7fe2cf798178
+heap: 0x7fe2cf7981b8	Val: 7fe2cf7981aa	Type: 7	Pointer: 0x7fe2cf7981a8
+heap: 0x7fe2cf7981c0	Val: 7fe2cf79819a	Type: 7	Pointer: 0x7fe2cf798198
+
+
+After Garbage Collection
+stack: 0x7ffe83eca368	Val: 7fe2cf7ab892	Type: 7	Pointer: 0x7fe2cf7ab890
+stack: 0x7ffe83eca370	Val: 7fe2cf7ab8a2	Type: 7	Pointer: 0x7fe2cf7ab8a0
+stack: 0x7ffe83eca378	Val: 7fe2cf7ab8b2	Type: 7	Pointer: 0x7fe2cf7ab8b0
+stack: 0x7ffe83eca380	Val: 7fe2cf7ab8c2	Type: 7	Pointer: 0x7fe2cf7ab8c0
+stack: 0x7ffe83eca388	Val: 7fe2cf7ab8d2	Type: 7	Pointer: 0x7fe2cf7ab8d0
+stack: 0x7ffe83eca390	Val: 7fe2cf7ab8e2	Type: 7	Pointer: 0x7fe2cf7ab8e0
+stack: 0x7ffe83eca398	Val: 7fe2cf7ab8f2	Type: 7	Pointer: 0x7fe2cf7ab8f0
+stack: 0x7ffe83eca3a0	Val: 7fe2cf7ab903	Type: 8	Pointer: 0x7fe2cf7ab900
+stack: 0x7ffe83eca3a8	Val: 7fe2cf7ab91a	Type: 7	Pointer: 0x7fe2cf7ab918
+stack: 0x7ffe83eca3b0	Val: 7fe2cf7ab92a	Type: 7	Pointer: 0x7fe2cf7ab928
+stack: 0x7ffe83eca3b8	Val: 7fe2cf7ab93a	Type: 7	Pointer: 0x7fe2cf7ab938
+stack: 0x7ffe83eca3c0	Val: 7fe2cf7ab94a	Type: 7	Pointer: 0x7fe2cf7ab948
+stack: 0x7ffe83eca3c8	Val: 7fe2cf7ab95a	Type: 7	Pointer: 0x7fe2cf7ab958
+stack: 0x7ffe83eca3d0	Val: 7fe2cf7ab96a	Type: 7	Pointer: 0x7fe2cf7ab968
+stack: 0x7ffe83eca3d8	Val: 7fe2cf7ab97a	Type: 7	Pointer: 0x7fe2cf7ab978
+stack: 0x7ffe83eca3e0	Val: 7fe2cf7ab98b	Type: 8	Pointer: 0x7fe2cf7ab988
+stack: 0x7ffe83eca3e8	Val: 7fe2cf7aba33	Type: 8	Pointer: 0x7fe2cf7aba30
+To Space:
+heap: 0x7fe2cf7ab890	Val: 7fe2cf7ab8a2	Type: 7	Pointer: 0x7fe2cf7ab8a0
+heap: 0x7fe2cf7ab898	Val: 7fe2cf7ab8b2	Type: 7	Pointer: 0x7fe2cf7ab8b0
+heap: 0x7fe2cf7ab8a0	Val: 7fe2cf7ab8c2	Type: 7	Pointer: 0x7fe2cf7ab8c0
+heap: 0x7fe2cf7ab8a8	Val: 7fe2cf7ab8d2	Type: 7	Pointer: 0x7fe2cf7ab8d0
+heap: 0x7fe2cf7ab8b0	Val: 7fe2cf7ab8f2	Type: 7	Pointer: 0x7fe2cf7ab8f0
+heap: 0x7fe2cf7ab8b8	Val: 7fe2cf7ab8e2	Type: 7	Pointer: 0x7fe2cf7ab8e0
+heap: 0x7fe2cf7ab8c0	Val: 7fe2cf7ab903	Type: 8	Pointer: 0x7fe2cf7ab900
+heap: 0x7fe2cf7ab8c8	Val: 7fe2cf7ab91a	Type: 7	Pointer: 0x7fe2cf7ab918
+heap: 0x7fe2cf7ab8d0	Val: 7fe2cf7ab92a	Type: 7	Pointer: 0x7fe2cf7ab928
+heap: 0x7fe2cf7ab8d8	Val: 7fe2cf7ab93a	Type: 7	Pointer: 0x7fe2cf7ab938
+heap: 0x7fe2cf7ab8e0	Val: 7fe2cf7ab94a	Type: 7	Pointer: 0x7fe2cf7ab948
+heap: 0x7fe2cf7ab8e8	Val: 7fe2cf7ab95a	Type: 7	Pointer: 0x7fe2cf7ab958
+heap: 0x7fe2cf7ab8f0	Val: 7fe2cf7ab96a	Type: 7	Pointer: 0x7fe2cf7ab968
+heap: 0x7fe2cf7ab8f8	Val: 7fe2cf7ab97a	Type: 7	Pointer: 0x7fe2cf7ab978
+heap: 0x7fe2cf7ab900	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fe2cf7ab908	Val: 80	Type: 0
+heap: 0x7fe2cf7ab910	Val: 7fe2cf7aba33	Type: 8	Pointer: 0x7fe2cf7aba30
+heap: 0x7fe2cf7ab918	Val: b0	Type: 0
+heap: 0x7fe2cf7ab920	Val: 220	Type: 0
+heap: 0x7fe2cf7ab928	Val: 170	Type: 0
+heap: 0x7fe2cf7ab930	Val: 130	Type: 0
+heap: 0x7fe2cf7ab938	Val: 20	Type: 0
+heap: 0x7fe2cf7ab940	Val: 10	Type: 0
+heap: 0x7fe2cf7ab948	Val: 40	Type: 0
+heap: 0x7fe2cf7ab950	Val: 30	Type: 0
+heap: 0x7fe2cf7ab958	Val: a0	Type: 0
+heap: 0x7fe2cf7ab960	Val: 90	Type: 0
+heap: 0x7fe2cf7ab968	Val: f0	Type: 0
+heap: 0x7fe2cf7ab970	Val: e0	Type: 0
+heap: 0x7fe2cf7ab978	Val: 70	Type: 0
+heap: 0x7fe2cf7ab980	Val: 60	Type: 0
+heap: 0x7fe2cf7ab988	Val: 14	Type: 9	Pointer: 0x10
+heap: 0x7fe2cf7ab990	Val: 40	Type: 0
+heap: 0x7fe2cf7ab998	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9a0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9a8	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9b0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9b8	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9c0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9c8	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9d0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9d8	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9e0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9e8	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9f0	Val: 40	Type: 0
+heap: 0x7fe2cf7ab9f8	Val: 40	Type: 0
+heap: 0x7fe2cf7aba00	Val: 40	Type: 0
+heap: 0x7fe2cf7aba08	Val: 40	Type: 0
+heap: 0x7fe2cf7aba10	Val: 40	Type: 0
+heap: 0x7fe2cf7aba18	Val: 40	Type: 0
+heap: 0x7fe2cf7aba20	Val: 40	Type: 0
+heap: 0x7fe2cf7aba28	Val: 40	Type: 0
+heap: 0x7fe2cf7aba30	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fe2cf7aba38	Val: 90	Type: 0
+heap: 0x7fe2cf7aba40	Val: 90	Type: 0
+
+
+# Code 2, Gap between tree and inserted node, Output of DFS GC #######################################
+
+
+Stack:
+rsp: 0x7fff0e6dfa88	Val: 7fbdce3981ba	Type: 7	Pointer: 0x7fbdce3981b8
+rsp: 0x7fff0e6dfa90	Val: 7fbdce3981aa	Type: 7	Pointer: 0x7fbdce3981a8
+rsp: 0x7fff0e6dfa98	Val: 7fbdce39819a	Type: 7	Pointer: 0x7fbdce398198
+rsp: 0x7fff0e6dfaa0	Val: 7fbdce39818a	Type: 7	Pointer: 0x7fbdce398188
+rsp: 0x7fff0e6dfaa8	Val: 7fbdce39817a	Type: 7	Pointer: 0x7fbdce398178
+rsp: 0x7fff0e6dfab0	Val: 7fbdce39816a	Type: 7	Pointer: 0x7fbdce398168
+rsp: 0x7fff0e6dfab8	Val: 7fbdce39815a	Type: 7	Pointer: 0x7fbdce398158
+rsp: 0x7fff0e6dfac0	Val: 7fbdce398143	Type: 8	Pointer: 0x7fbdce398140
+rsp: 0x7fff0e6dfac8	Val: 7fbdce398132	Type: 7	Pointer: 0x7fbdce398130
+rsp: 0x7fff0e6dfad0	Val: 7fbdce398122	Type: 7	Pointer: 0x7fbdce398120
+rsp: 0x7fff0e6dfad8	Val: 7fbdce398112	Type: 7	Pointer: 0x7fbdce398110
+rsp: 0x7fff0e6dfae0	Val: 7fbdce398102	Type: 7	Pointer: 0x7fbdce398100
+rsp: 0x7fff0e6dfae8	Val: 7fbdce3980f2	Type: 7	Pointer: 0x7fbdce3980f0
+rsp: 0x7fff0e6dfaf0	Val: 7fbdce3980e2	Type: 7	Pointer: 0x7fbdce3980e0
+rsp: 0x7fff0e6dfaf8	Val: 7fbdce3980d2	Type: 7	Pointer: 0x7fbdce3980d0
+rsp: 0x7fff0e6dfb00	Val: 7fbdce39802b	Type: 8	Pointer: 0x7fbdce398028
+rsp: 0x7fff0e6dfb08	Val: 7fbdce398013	Type: 8	Pointer: 0x7fbdce398010
+From Space:
+heap: 0x7fbdce398010	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fbdce398018	Val: 90	Type: 0
+heap: 0x7fbdce398020	Val: 90	Type: 0
+heap: 0x7fbdce398028	Val: 14	Type: 9	Pointer: 0x10
+heap: 0x7fbdce398030	Val: 40	Type: 0
+heap: 0x7fbdce398038	Val: 40	Type: 0
+heap: 0x7fbdce398040	Val: 40	Type: 0
+heap: 0x7fbdce398048	Val: 40	Type: 0
+heap: 0x7fbdce398050	Val: 40	Type: 0
+heap: 0x7fbdce398058	Val: 40	Type: 0
+heap: 0x7fbdce398060	Val: 40	Type: 0
+heap: 0x7fbdce398068	Val: 40	Type: 0
+heap: 0x7fbdce398070	Val: 40	Type: 0
+heap: 0x7fbdce398078	Val: 40	Type: 0
+heap: 0x7fbdce398080	Val: 40	Type: 0
+heap: 0x7fbdce398088	Val: 40	Type: 0
+heap: 0x7fbdce398090	Val: 40	Type: 0
+heap: 0x7fbdce398098	Val: 40	Type: 0
+heap: 0x7fbdce3980a0	Val: 40	Type: 0
+heap: 0x7fbdce3980a8	Val: 40	Type: 0
+heap: 0x7fbdce3980b0	Val: 40	Type: 0
+heap: 0x7fbdce3980b8	Val: 40	Type: 0
+heap: 0x7fbdce3980c0	Val: 40	Type: 0
+heap: 0x7fbdce3980c8	Val: 40	Type: 0
+heap: 0x7fbdce3980d0	Val: 70	Type: 0
+heap: 0x7fbdce3980d8	Val: 60	Type: 0
+heap: 0x7fbdce3980e0	Val: f0	Type: 0
+heap: 0x7fbdce3980e8	Val: e0	Type: 0
+heap: 0x7fbdce3980f0	Val: a0	Type: 0
+heap: 0x7fbdce3980f8	Val: 90	Type: 0
+heap: 0x7fbdce398100	Val: 40	Type: 0
+heap: 0x7fbdce398108	Val: 30	Type: 0
+heap: 0x7fbdce398110	Val: 20	Type: 0
+heap: 0x7fbdce398118	Val: 10	Type: 0
+heap: 0x7fbdce398120	Val: 170	Type: 0
+heap: 0x7fbdce398128	Val: 130	Type: 0
+heap: 0x7fbdce398130	Val: b0	Type: 0
+heap: 0x7fbdce398138	Val: 220	Type: 0
+heap: 0x7fbdce398140	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fbdce398148	Val: 80	Type: 0
+heap: 0x7fbdce398150	Val: 7fbdce398013	Type: 8	Pointer: 0x7fbdce398010
+heap: 0x7fbdce398158	Val: 7fbdce3980e2	Type: 7	Pointer: 0x7fbdce3980e0
+heap: 0x7fbdce398160	Val: 7fbdce3980d2	Type: 7	Pointer: 0x7fbdce3980d0
+heap: 0x7fbdce398168	Val: 7fbdce398102	Type: 7	Pointer: 0x7fbdce398100
+heap: 0x7fbdce398170	Val: 7fbdce3980f2	Type: 7	Pointer: 0x7fbdce3980f0
+heap: 0x7fbdce398178	Val: 7fbdce398122	Type: 7	Pointer: 0x7fbdce398120
+heap: 0x7fbdce398180	Val: 7fbdce398112	Type: 7	Pointer: 0x7fbdce398110
+heap: 0x7fbdce398188	Val: 7fbdce398143	Type: 8	Pointer: 0x7fbdce398140
+heap: 0x7fbdce398190	Val: 7fbdce398132	Type: 7	Pointer: 0x7fbdce398130
+heap: 0x7fbdce398198	Val: 7fbdce39815a	Type: 7	Pointer: 0x7fbdce398158
+heap: 0x7fbdce3981a0	Val: 7fbdce39816a	Type: 7	Pointer: 0x7fbdce398168
+heap: 0x7fbdce3981a8	Val: 7fbdce39818a	Type: 7	Pointer: 0x7fbdce398188
+heap: 0x7fbdce3981b0	Val: 7fbdce39817a	Type: 7	Pointer: 0x7fbdce398178
+heap: 0x7fbdce3981b8	Val: 7fbdce3981aa	Type: 7	Pointer: 0x7fbdce3981a8
+heap: 0x7fbdce3981c0	Val: 7fbdce39819a	Type: 7	Pointer: 0x7fbdce398198
+
+
+After First Phase
+Queue: 
+Stack:
+stack: 0x7fff0e6dfa88	Val: 7fbdce3ab892	Type: 7	Pointer: 0x7fbdce3ab890
+stack: 0x7fff0e6dfa90	Val: 7fbdce3ab8a2	Type: 7	Pointer: 0x7fbdce3ab8a0
+stack: 0x7fff0e6dfa98	Val: 7fbdce3ab932	Type: 7	Pointer: 0x7fbdce3ab930
+stack: 0x7fff0e6dfaa0	Val: 7fbdce3ab8b2	Type: 7	Pointer: 0x7fbdce3ab8b0
+stack: 0x7fff0e6dfaa8	Val: 7fbdce3ab902	Type: 7	Pointer: 0x7fbdce3ab900
+stack: 0x7fff0e6dfab0	Val: 7fbdce3ab972	Type: 7	Pointer: 0x7fbdce3ab970
+stack: 0x7fff0e6dfab8	Val: 7fbdce3ab942	Type: 7	Pointer: 0x7fbdce3ab940
+stack: 0x7fff0e6dfac0	Val: 7fbdce3ab8c3	Type: 8	Pointer: 0x7fbdce3ab8c0
+stack: 0x7fff0e6dfac8	Val: 7fbdce3ab8f2	Type: 7	Pointer: 0x7fbdce3ab8f0
+stack: 0x7fff0e6dfad0	Val: 7fbdce3ab912	Type: 7	Pointer: 0x7fbdce3ab910
+stack: 0x7fff0e6dfad8	Val: 7fbdce3ab922	Type: 7	Pointer: 0x7fbdce3ab920
+stack: 0x7fff0e6dfae0	Val: 7fbdce3ab982	Type: 7	Pointer: 0x7fbdce3ab980
+stack: 0x7fff0e6dfae8	Val: 7fbdce3ab992	Type: 7	Pointer: 0x7fbdce3ab990
+stack: 0x7fff0e6dfaf0	Val: 7fbdce3ab952	Type: 7	Pointer: 0x7fbdce3ab950
+stack: 0x7fff0e6dfaf8	Val: 7fbdce3ab962	Type: 7	Pointer: 0x7fbdce3ab960
+stack: 0x7fff0e6dfb00	Val: 7fbdce3ab9a3	Type: 8	Pointer: 0x7fbdce3ab9a0
+stack: 0x7fff0e6dfb08	Val: 7fbdce3ab8db	Type: 8	Pointer: 0x7fbdce3ab8d8
+To Space:
+heap: 0x7fbdce3ab890	Val: 7fbdce3ab8a2	Type: 7	Pointer: 0x7fbdce3ab8a0
+heap: 0x7fbdce3ab898	Val: 7fbdce3ab932	Type: 7	Pointer: 0x7fbdce3ab930
+heap: 0x7fbdce3ab8a0	Val: 7fbdce3ab8b2	Type: 7	Pointer: 0x7fbdce3ab8b0
+heap: 0x7fbdce3ab8a8	Val: 7fbdce3ab902	Type: 7	Pointer: 0x7fbdce3ab900
+heap: 0x7fbdce3ab8b0	Val: 7fbdce3ab8c3	Type: 8	Pointer: 0x7fbdce3ab8c0
+heap: 0x7fbdce3ab8b8	Val: 7fbdce3ab8f2	Type: 7	Pointer: 0x7fbdce3ab8f0
+heap: 0x7fbdce3ab8c0	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fbdce3ab8c8	Val: 80	Type: 0
+heap: 0x7fbdce3ab8d0	Val: 7fbdce3ab8db	Type: 8	Pointer: 0x7fbdce3ab8d8
+heap: 0x7fbdce3ab8d8	Val: 2	Type: 7	Pointer: (nil)
+heap: 0x7fbdce3ab8e0	Val: 90	Type: 0
+heap: 0x7fbdce3ab8e8	Val: 90	Type: 0
+heap: 0x7fbdce3ab8f0	Val: b0	Type: 0
+heap: 0x7fbdce3ab8f8	Val: 220	Type: 0
+heap: 0x7fbdce3ab900	Val: 7fbdce3ab912	Type: 7	Pointer: 0x7fbdce3ab910
+heap: 0x7fbdce3ab908	Val: 7fbdce3ab922	Type: 7	Pointer: 0x7fbdce3ab920
+heap: 0x7fbdce3ab910	Val: 170	Type: 0
+heap: 0x7fbdce3ab918	Val: 130	Type: 0
+heap: 0x7fbdce3ab920	Val: 20	Type: 0
+heap: 0x7fbdce3ab928	Val: 10	Type: 0
+heap: 0x7fbdce3ab930	Val: 7fbdce3ab942	Type: 7	Pointer: 0x7fbdce3ab940
+heap: 0x7fbdce3ab938	Val: 7fbdce3ab972	Type: 7	Pointer: 0x7fbdce3ab970
+heap: 0x7fbdce3ab940	Val: 7fbdce3ab952	Type: 7	Pointer: 0x7fbdce3ab950
+heap: 0x7fbdce3ab948	Val: 7fbdce3ab962	Type: 7	Pointer: 0x7fbdce3ab960
+heap: 0x7fbdce3ab950	Val: f0	Type: 0
+heap: 0x7fbdce3ab958	Val: e0	Type: 0
+heap: 0x7fbdce3ab960	Val: 70	Type: 0
+heap: 0x7fbdce3ab968	Val: 60	Type: 0
+heap: 0x7fbdce3ab970	Val: 7fbdce3ab982	Type: 7	Pointer: 0x7fbdce3ab980
+heap: 0x7fbdce3ab978	Val: 7fbdce3ab992	Type: 7	Pointer: 0x7fbdce3ab990
+heap: 0x7fbdce3ab980	Val: 40	Type: 0
+heap: 0x7fbdce3ab988	Val: 30	Type: 0
+heap: 0x7fbdce3ab990	Val: a0	Type: 0
+heap: 0x7fbdce3ab998	Val: 90	Type: 0
+heap: 0x7fbdce3ab9a0	Val: 14	Type: 9	Pointer: 0x10
+heap: 0x7fbdce3ab9a8	Val: 40	Type: 0
+heap: 0x7fbdce3ab9b0	Val: 40	Type: 0
+heap: 0x7fbdce3ab9b8	Val: 40	Type: 0
+heap: 0x7fbdce3ab9c0	Val: 40	Type: 0
+heap: 0x7fbdce3ab9c8	Val: 40	Type: 0
+heap: 0x7fbdce3ab9d0	Val: 40	Type: 0
+heap: 0x7fbdce3ab9d8	Val: 40	Type: 0
+heap: 0x7fbdce3ab9e0	Val: 40	Type: 0
+heap: 0x7fbdce3ab9e8	Val: 40	Type: 0
+heap: 0x7fbdce3ab9f0	Val: 40	Type: 0
+heap: 0x7fbdce3ab9f8	Val: 40	Type: 0
+heap: 0x7fbdce3aba00	Val: 40	Type: 0
+heap: 0x7fbdce3aba08	Val: 40	Type: 0
+heap: 0x7fbdce3aba10	Val: 40	Type: 0
+heap: 0x7fbdce3aba18	Val: 40	Type: 0
+heap: 0x7fbdce3aba20	Val: 40	Type: 0
+heap: 0x7fbdce3aba28	Val: 40	Type: 0
+heap: 0x7fbdce3aba30	Val: 40	Type: 0
+heap: 0x7fbdce3aba38	Val: 40	Type: 0
+heap: 0x7fbdce3aba40	Val: 40	Type: 0
+
+
+# Code 3, Linked list where nodes are scattered throughout memory, Output of Cheney's GC #######################################
+
+Stack:
+rsp: 0x7ffede397fa0	Val: 7f6adf019129	Type: 6	Pointer: 0x7f6adf019128
+rsp: 0x7ffede397fa8	Val: 7f6adf0190c4	Type: 9	Pointer: 0x7f6adf0190c0
+rsp: 0x7ffede397fb0	Val: 7f6adf0190b9	Type: 6	Pointer: 0x7f6adf0190b8
+rsp: 0x7ffede397fb8	Val: 7f6adf01903b	Type: 8	Pointer: 0x7f6adf019038
+rsp: 0x7ffede397fc0	Val: 7f6adf019031	Type: 6	Pointer: 0x7f6adf019030
+rsp: 0x7ffede397fc8	Val: 7f6adf019022	Type: 7	Pointer: 0x7f6adf019020
+rsp: 0x7ffede397fd0	Val: 7f6adf019019	Type: 6	Pointer: 0x7f6adf019018
+rsp: 0x7ffede397fd8	Val: 7f6adf019011	Type: 6	Pointer: 0x7f6adf019010
+From Space:
+heap: 0x7f6adf019010	Val: 0	Type: 0
+heap: 0x7f6adf019018	Val: 7f6adf019011	Type: 6	Pointer: 0x7f6adf019010
+heap: 0x7f6adf019020	Val: 70	Type: 0
+heap: 0x7f6adf019028	Val: 60	Type: 0
+heap: 0x7f6adf019030	Val: 7f6adf019019	Type: 6	Pointer: 0x7f6adf019018
+heap: 0x7f6adf019038	Val: f	Type: -1
+heap: 0x7f6adf019040	Val: 80	Type: 0
+heap: 0x7f6adf019048	Val: 80	Type: 0
+heap: 0x7f6adf019050	Val: 80	Type: 0
+heap: 0x7f6adf019058	Val: 80	Type: 0
+heap: 0x7f6adf019060	Val: 80	Type: 0
+heap: 0x7f6adf019068	Val: 80	Type: 0
+heap: 0x7f6adf019070	Val: 80	Type: 0
+heap: 0x7f6adf019078	Val: 80	Type: 0
+heap: 0x7f6adf019080	Val: 80	Type: 0
+heap: 0x7f6adf019088	Val: 80	Type: 0
+heap: 0x7f6adf019090	Val: 80	Type: 0
+heap: 0x7f6adf019098	Val: 80	Type: 0
+heap: 0x7f6adf0190a0	Val: 80	Type: 0
+heap: 0x7f6adf0190a8	Val: 80	Type: 0
+heap: 0x7f6adf0190b0	Val: 80	Type: 0
+heap: 0x7f6adf0190b8	Val: 7f6adf019031	Type: 6	Pointer: 0x7f6adf019030
+heap: 0x7f6adf0190c0	Val: 17	Type: -1
+heap: 0x7f6adf0190c8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190d0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190d8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190e0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190e8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190f0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf0190f8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019100	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019108	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019110	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019118	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019120	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf019128	Val: 7f6adf0190b9	Type: 6	Pointer: 0x7f6adf0190b8
+heap: 0x7f6adf019130	Val: 80	Type: 0
+
+
+After Garbage Collection
+Stack:
+stack: 0x7ffede397fa0	Val: 7f6adf02c891	Type: 6	Pointer: 0x7f6adf02c890
+stack: 0x7ffede397fa8	Val: 7f6adf02c89c	Type: 9	Pointer: 0x7f6adf02c898
+stack: 0x7ffede397fb0	Val: 7f6adf02c901	Type: 6	Pointer: 0x7f6adf02c900
+stack: 0x7ffede397fb8	Val: 7f6adf02c90b	Type: 8	Pointer: 0x7f6adf02c908
+stack: 0x7ffede397fc0	Val: 7f6adf02c989	Type: 6	Pointer: 0x7f6adf02c988
+stack: 0x7ffede397fc8	Val: 7f6adf02c992	Type: 7	Pointer: 0x7f6adf02c990
+stack: 0x7ffede397fd0	Val: 7f6adf02c9a1	Type: 6	Pointer: 0x7f6adf02c9a0
+stack: 0x7ffede397fd8	Val: 7f6adf02c9a9	Type: 6	Pointer: 0x7f6adf02c9a8
+To Space:
+heap: 0x7f6adf02c890	Val: 7f6adf02c901	Type: 6	Pointer: 0x7f6adf02c900
+heap: 0x7f6adf02c898	Val: 17	Type: -1
+heap: 0x7f6adf02c8a0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8a8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8b0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8b8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8c0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8c8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8d0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8d8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8e0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8e8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8f0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c8f8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f6adf02c900	Val: 7f6adf02c989	Type: 6	Pointer: 0x7f6adf02c988
+heap: 0x7f6adf02c908	Val: f	Type: -1
+heap: 0x7f6adf02c910	Val: 80	Type: 0
+heap: 0x7f6adf02c918	Val: 80	Type: 0
+heap: 0x7f6adf02c920	Val: 80	Type: 0
+heap: 0x7f6adf02c928	Val: 80	Type: 0
+heap: 0x7f6adf02c930	Val: 80	Type: 0
+heap: 0x7f6adf02c938	Val: 80	Type: 0
+heap: 0x7f6adf02c940	Val: 80	Type: 0
+heap: 0x7f6adf02c948	Val: 80	Type: 0
+heap: 0x7f6adf02c950	Val: 80	Type: 0
+heap: 0x7f6adf02c958	Val: 80	Type: 0
+heap: 0x7f6adf02c960	Val: 80	Type: 0
+heap: 0x7f6adf02c968	Val: 80	Type: 0
+heap: 0x7f6adf02c970	Val: 80	Type: 0
+heap: 0x7f6adf02c978	Val: 80	Type: 0
+heap: 0x7f6adf02c980	Val: 80	Type: 0
+heap: 0x7f6adf02c988	Val: 7f6adf02c9a1	Type: 6	Pointer: 0x7f6adf02c9a0
+heap: 0x7f6adf02c990	Val: 70	Type: 0
+heap: 0x7f6adf02c998	Val: 60	Type: 0
+heap: 0x7f6adf02c9a0	Val: 7f6adf02c9a9	Type: 6	Pointer: 0x7f6adf02c9a8
+heap: 0x7f6adf02c9a8	Val: 0	Type: 0
+
+
+# Code 3, Linked list where nodes are scattered throughout memory, Output of DFS GC #######################################
+
+Stack:
+rsp: 0x7ffd9cf7cba0	Val: 7f2c7fa3c129	Type: 6	Pointer: 0x7f2c7fa3c128
+rsp: 0x7ffd9cf7cba8	Val: 7f2c7fa3c0c4	Type: 9	Pointer: 0x7f2c7fa3c0c0
+rsp: 0x7ffd9cf7cbb0	Val: 7f2c7fa3c0b9	Type: 6	Pointer: 0x7f2c7fa3c0b8
+rsp: 0x7ffd9cf7cbb8	Val: 7f2c7fa3c03b	Type: 8	Pointer: 0x7f2c7fa3c038
+rsp: 0x7ffd9cf7cbc0	Val: 7f2c7fa3c031	Type: 6	Pointer: 0x7f2c7fa3c030
+rsp: 0x7ffd9cf7cbc8	Val: 7f2c7fa3c022	Type: 7	Pointer: 0x7f2c7fa3c020
+rsp: 0x7ffd9cf7cbd0	Val: 7f2c7fa3c019	Type: 6	Pointer: 0x7f2c7fa3c018
+rsp: 0x7ffd9cf7cbd8	Val: 7f2c7fa3c011	Type: 6	Pointer: 0x7f2c7fa3c010
+From Space:
+heap: 0x7f2c7fa3c010	Val: 0	Type: 0
+heap: 0x7f2c7fa3c018	Val: 7f2c7fa3c011	Type: 6	Pointer: 0x7f2c7fa3c010
+heap: 0x7f2c7fa3c020	Val: 70	Type: 0
+heap: 0x7f2c7fa3c028	Val: 60	Type: 0
+heap: 0x7f2c7fa3c030	Val: 7f2c7fa3c019	Type: 6	Pointer: 0x7f2c7fa3c018
+heap: 0x7f2c7fa3c038	Val: f	Type: -1
+heap: 0x7f2c7fa3c040	Val: 80	Type: 0
+heap: 0x7f2c7fa3c048	Val: 80	Type: 0
+heap: 0x7f2c7fa3c050	Val: 80	Type: 0
+heap: 0x7f2c7fa3c058	Val: 80	Type: 0
+heap: 0x7f2c7fa3c060	Val: 80	Type: 0
+heap: 0x7f2c7fa3c068	Val: 80	Type: 0
+heap: 0x7f2c7fa3c070	Val: 80	Type: 0
+heap: 0x7f2c7fa3c078	Val: 80	Type: 0
+heap: 0x7f2c7fa3c080	Val: 80	Type: 0
+heap: 0x7f2c7fa3c088	Val: 80	Type: 0
+heap: 0x7f2c7fa3c090	Val: 80	Type: 0
+heap: 0x7f2c7fa3c098	Val: 80	Type: 0
+heap: 0x7f2c7fa3c0a0	Val: 80	Type: 0
+heap: 0x7f2c7fa3c0a8	Val: 80	Type: 0
+heap: 0x7f2c7fa3c0b0	Val: 80	Type: 0
+heap: 0x7f2c7fa3c0b8	Val: 7f2c7fa3c031	Type: 6	Pointer: 0x7f2c7fa3c030
+heap: 0x7f2c7fa3c0c0	Val: 17	Type: -1
+heap: 0x7f2c7fa3c0c8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0d0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0d8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0e0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0e8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0f0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c0f8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c100	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c108	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c110	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c118	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c120	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa3c128	Val: 7f2c7fa3c0b9	Type: 6	Pointer: 0x7f2c7fa3c0b8
+heap: 0x7f2c7fa3c130	Val: 80	Type: 0
+
+
+After First Phase
+Stack:
+stack: 0x7ffd9cf7cba0	Val: 7f2c7fa4f891	Type: 6	Pointer: 0x7f2c7fa4f890
+stack: 0x7ffd9cf7cba8	Val: 7f2c7fa4f8bc	Type: 9	Pointer: 0x7f2c7fa4f8b8
+stack: 0x7ffd9cf7cbb0	Val: 7f2c7fa4f899	Type: 6	Pointer: 0x7f2c7fa4f898
+stack: 0x7ffd9cf7cbb8	Val: 7f2c7fa4f923	Type: 8	Pointer: 0x7f2c7fa4f920
+stack: 0x7ffd9cf7cbc0	Val: 7f2c7fa4f8a1	Type: 6	Pointer: 0x7f2c7fa4f8a0
+stack: 0x7ffd9cf7cbc8	Val: 7f2c7fa4f9a2	Type: 7	Pointer: 0x7f2c7fa4f9a0
+stack: 0x7ffd9cf7cbd0	Val: 7f2c7fa4f8a9	Type: 6	Pointer: 0x7f2c7fa4f8a8
+stack: 0x7ffd9cf7cbd8	Val: 7f2c7fa4f8b1	Type: 6	Pointer: 0x7f2c7fa4f8b0
+To Space:
+heap: 0x7f2c7fa4f890	Val: 7f2c7fa4f899	Type: 6	Pointer: 0x7f2c7fa4f898
+heap: 0x7f2c7fa4f898	Val: 7f2c7fa4f8a1	Type: 6	Pointer: 0x7f2c7fa4f8a0
+heap: 0x7f2c7fa4f8a0	Val: 7f2c7fa4f8a9	Type: 6	Pointer: 0x7f2c7fa4f8a8
+heap: 0x7f2c7fa4f8a8	Val: 7f2c7fa4f8b1	Type: 6	Pointer: 0x7f2c7fa4f8b0
+heap: 0x7f2c7fa4f8b0	Val: 0	Type: 0
+heap: 0x7f2c7fa4f8b8	Val: 17	Type: -1
+heap: 0x7f2c7fa4f8c0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8c8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8d0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8d8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8e0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8e8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8f0	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f8f8	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f900	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f908	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f910	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f918	Val: 6100000061	Type: 6	Pointer: 0x6100000060
+heap: 0x7f2c7fa4f920	Val: f	Type: -1
+heap: 0x7f2c7fa4f928	Val: 80	Type: 0
+heap: 0x7f2c7fa4f930	Val: 80	Type: 0
+heap: 0x7f2c7fa4f938	Val: 80	Type: 0
+heap: 0x7f2c7fa4f940	Val: 80	Type: 0
+heap: 0x7f2c7fa4f948	Val: 80	Type: 0
+heap: 0x7f2c7fa4f950	Val: 80	Type: 0
+heap: 0x7f2c7fa4f958	Val: 80	Type: 0
+heap: 0x7f2c7fa4f960	Val: 80	Type: 0
+heap: 0x7f2c7fa4f968	Val: 80	Type: 0
+heap: 0x7f2c7fa4f970	Val: 80	Type: 0
+heap: 0x7f2c7fa4f978	Val: 80	Type: 0
+heap: 0x7f2c7fa4f980	Val: 80	Type: 0
+heap: 0x7f2c7fa4f988	Val: 80	Type: 0
+heap: 0x7f2c7fa4f990	Val: 80	Type: 0
+heap: 0x7f2c7fa4f998	Val: 80	Type: 0
+heap: 0x7f2c7fa4f9a0	Val: 70	Type: 0
+heap: 0x7f2c7fa4f9a8	Val: 60	Type: 0
+
+
+# Code 4, Hash Table with small number frequently accessed key value pairs, Output of DFS + Hot Cold Segregation GC #######################################
+
+
+rsp: 0x7ffe3357c138
+rbp: 0x7ffe3357c190
+rbx: 0x7f12e3e67090
+to space: 0x7f12e3e7a890 139719109748880
+from space: 0x7f12e3e67010 139719109668880
+
+Stack:
+rsp: 0x7ffe3357c138	Val: 7f12e3e67063	Type: 8	Pointer: 0x7f12e3e67060
+rsp: 0x7ffe3357c140	Val: 7f12e3e67059	Type: 6	Pointer: 0x7f12e3e67058
+rsp: 0x7ffe3357c148	Val: 7f12e3e67051	Type: 6	Pointer: 0x7f12e3e67050
+rsp: 0x7ffe3357c150	Val: 7f12e3e67049	Type: 6	Pointer: 0x7f12e3e67048
+rsp: 0x7ffe3357c158	Val: 7f12e3e67041	Type: 6	Pointer: 0x7f12e3e67040
+rsp: 0x7ffe3357c160	Val: 7f12e3e67039	Type: 6	Pointer: 0x7f12e3e67038
+rsp: 0x7ffe3357c168	Val: 7f12e3e67031	Type: 6	Pointer: 0x7f12e3e67030
+rsp: 0x7ffe3357c170	Val: 7f12e3e67029	Type: 6	Pointer: 0x7f12e3e67028
+rsp: 0x7ffe3357c178	Val: 7f12e3e67021	Type: 6	Pointer: 0x7f12e3e67020
+rsp: 0x7ffe3357c180	Val: 7f12e3e67019	Type: 6	Pointer: 0x7f12e3e67018
+rsp: 0x7ffe3357c188	Val: 7f12e3e67011	Type: 6	Pointer: 0x7f12e3e67010
+From Space:
+heap: 0x7f12e3e67010	Val: 70	Type: 0
+heap: 0x7f12e3e67018	Val: 7f12e3e67011	Type: 6	Pointer: 0x7f12e3e67010
+heap: 0x7f12e3e67020	Val: 7f12e3e67019	Type: 6	Pointer: 0x7f12e3e67018
+heap: 0x7f12e3e67028	Val: 90	Type: 0
+heap: 0x7f12e3e67030	Val: 7f12e3e67029	Type: 6	Pointer: 0x7f12e3e67028
+heap: 0x7f12e3e67038	Val: 20	Type: 0
+heap: 0x7f12e3e67040	Val: 30	Type: 0
+heap: 0x7f12e3e67048	Val: 7f12e3e67041	Type: 6	Pointer: 0x7f12e3e67040
+heap: 0x7f12e3e67050	Val: b0	Type: 0
+heap: 0x7f12e3e67058	Val: 7f12e3e67051	Type: 6	Pointer: 0x7f12e3e67050
+heap: 0x7f12e3e67060	Val: 5	Type: 10
+heap: 0x7f12e3e67068	Val: 7f12e3e67021	Type: 6	Pointer: 0x7f12e3e67020
+heap: 0x7f12e3e67070	Val: 7f12e3e67031	Type: 6	Pointer: 0x7f12e3e67030
+heap: 0x7f12e3e67078	Val: 7f12e3e67039	Type: 6	Pointer: 0x7f12e3e67038
+heap: 0x7f12e3e67080	Val: 7f12e3e67049	Type: 6	Pointer: 0x7f12e3e67048
+heap: 0x7f12e3e67088	Val: 7f12e3e67059	Type: 6	Pointer: 0x7f12e3e67058
+
+
+After First Phase
+Stack:
+stack: 0x7ffe3357c138	Val: 7f12e3e7a893	Type: 8	Pointer: 0x7f12e3e7a890
+stack: 0x7ffe3357c140	Val: 7f12e3e844d1	Type: 6	Pointer: 0x7f12e3e844d0
+stack: 0x7ffe3357c148	Val: 7f12e3e844d9	Type: 6	Pointer: 0x7f12e3e844d8
+stack: 0x7ffe3357c150	Val: 7f12e3e844e1	Type: 6	Pointer: 0x7f12e3e844e0
+stack: 0x7ffe3357c158	Val: 7f12e3e844e9	Type: 6	Pointer: 0x7f12e3e844e8
+stack: 0x7ffe3357c160	Val: 7f12e3e844f1	Type: 6	Pointer: 0x7f12e3e844f0
+stack: 0x7ffe3357c168	Val: 7f12e3e844f9	Type: 6	Pointer: 0x7f12e3e844f8
+stack: 0x7ffe3357c170	Val: 7f12e3e84501	Type: 6	Pointer: 0x7f12e3e84500
+stack: 0x7ffe3357c178	Val: 7f12e3e7a8c1	Type: 6	Pointer: 0x7f12e3e7a8c0
+stack: 0x7ffe3357c180	Val: 7f12e3e7a8c9	Type: 6	Pointer: 0x7f12e3e7a8c8
+stack: 0x7ffe3357c188	Val: 7f12e3e7a8d1	Type: 6	Pointer: 0x7f12e3e7a8d0
+To Space Hot Region:
+heap: 0x7f12e3e7a890	Val: 5	Type: 10
+heap: 0x7f12e3e7a898	Val: 7f12e3e7a8c1	Type: 6	Pointer: 0x7f12e3e7a8c0
+heap: 0x7f12e3e7a8a0	Val: 7f12e3e844f9	Type: 6	Pointer: 0x7f12e3e844f8
+heap: 0x7f12e3e7a8a8	Val: 7f12e3e844f1	Type: 6	Pointer: 0x7f12e3e844f0
+heap: 0x7f12e3e7a8b0	Val: 7f12e3e844e1	Type: 6	Pointer: 0x7f12e3e844e0
+heap: 0x7f12e3e7a8b8	Val: 7f12e3e844d1	Type: 6	Pointer: 0x7f12e3e844d0
+heap: 0x7f12e3e7a8c0	Val: 7f12e3e7a8c9	Type: 6	Pointer: 0x7f12e3e7a8c8
+heap: 0x7f12e3e7a8c8	Val: 7f12e3e7a8d1	Type: 6	Pointer: 0x7f12e3e7a8d0
+heap: 0x7f12e3e7a8d0	Val: 70	Type: 0
+To Space Cold Region:
+heap: 0x7f12e3e844d0	Val: 7f12e3e844d9	Type: 6	Pointer: 0x7f12e3e844d8
+heap: 0x7f12e3e844d8	Val: b0	Type: 0
+heap: 0x7f12e3e844e0	Val: 7f12e3e844e9	Type: 6	Pointer: 0x7f12e3e844e8
+heap: 0x7f12e3e844e8	Val: 30	Type: 0
+heap: 0x7f12e3e844f0	Val: 20	Type: 0
+heap: 0x7f12e3e844f8	Val: 7f12e3e84501	Type: 6	Pointer: 0x7f12e3e84500
+heap: 0x7f12e3e84500	Val: 90	Type: 0
